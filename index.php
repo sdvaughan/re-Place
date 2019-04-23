@@ -16,4 +16,27 @@
 </style>
 	<h1 style="color: #800000; font-family: Arial;">re/Place</h1>
 </head>
+
+<body>
+        <canvas id="mainCanvas" width="500" height="500" style="border:3px solid #000000;"></canvas><br><br>
+	<p class="sansserif">please work</p>
+        <iframe style="display:none" name="hidden-form"></iframe>
+        <form action="/draw.php" method="post" target="hidden-form" onsubmit="setTimeout(function () { window.location.reload(); }, 20)">
+                <div>
+                        <label for="xCoord">X:</label>
+                        <input style="width:60px;" name="xCoord" type="number" min="0" max="500" required>
+                        <input style="margin-left:10px;" name="type" type="radio"  value="0" required>Circle<br>
+                        <label for="yCoord">Y:</label>
+                        <input style="width:60px;" name="yCoord" type="number" min="0" max="500" required>
+                        <input style="margin-left:10px;" name="type" type="radio" value="1" required>Square<br>
+                        <label for="size">Size:</label>
+                        <input style="width:60px;" name="size" type="number" min="1" max="100" required>
+                        <input style="margin-left:10px;" name="type" type="radio" value="2" required>Triangle<br><br>
+                        <span class="validity"></span>
+                </div>
+                <div>
+                        <input style="margin-left:30px;" type="submit">
+                </div>
+        </form>
+</body>
 </html>
