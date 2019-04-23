@@ -18,7 +18,9 @@ Technologies/Services
 ----------------------
 MySQL database (for storing placed shapes and the IP/user that placed them)
 
-Node.js (might need for Javascript implementation throughout site for database usage)
+PHP (used with Apache allowing server-side code execution)
+
+Apache HTTP Server
 
 Google Domains (for domain name)
 
