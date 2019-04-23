@@ -21,7 +21,7 @@
         <canvas id="mainCanvas" width="500" height="500" style="border:3px solid #000000;"></canvas><br><br>
 	<p class="sansserif">please work</p>
         <iframe style="display:none" name="hidden-form"></iframe>
-        <form action="/draw.php" method="post" target="hidden-form" onsubmit="setTimeout(function () { window.location.reload(); }, 20)">
+	<form action="/draw.php" method="post" >
                 <div>
                         <label for="xCoord">X:</label>
                         <input style="width:60px;" name="xCoord" type="number" min="0" max="500" required>
