@@ -16,7 +16,7 @@ An entertaining social experiment where users collaborate on a virtual canvas, u
 
 How to Use
 ------------
-Simply enter the desired size and coordinates, choose your desired shape, and hit "Submit"! Your shape will now be added to the canvas! Choose your entry wisely, because once you enter your shape, you will be blocked for a short amount of time from submitting new ones.
+Simply enter the desired size and coordinates, choose your desired shape, and hit "Submit"! Your shape will now be added to the canvas. Choose your entry wisely, because once you enter your shape, you will be blocked for a short amount of time from submitting new ones.
 
 Technologies/Services
 ----------------------
