@@ -17,13 +17,14 @@
             $x = $_POST['xCoord'];			#grabbing data from POST
             $y = $_POST['yCoord'];
             $size = $_POST["size"];
-            $type = $_POST["type"];
+	    $type = $_POST["type"];
+	    $fill = (isset($_POST['fill'])) ? 1 : 0;
             $time = date('Y-m-d H:i:s');
             $ip = $_SERVER['REMOTE_ADDR'];
 
          #   echo $time;
 
-            $sql = "INSERT INTO `shapes` VALUES ($x, $y, $size, $type, \"$time\", \"$ip\")";	#forming SQL query
+            $sql = "INSERT INTO `shapes` VALUES ($x, $y, $size, $type, $fill, \"$time\", \"$ip\")";	#forming SQL query
           #  echo $sql;
           #  echo "Before db select";
           #  echo "after db select";
