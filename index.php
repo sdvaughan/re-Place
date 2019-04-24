@@ -6,6 +6,7 @@
 	table, th, td {
 		border: 1px solid black;
 		border-collapse: collapse;
+		background-color:#ffffff;
 	}
 	form {
 		width: 300px;
@@ -14,10 +15,11 @@
 	p.sansserif {
 		font-family: "Agency FB", sans-serif;
 		font-weight: bold;
+		text-align: center;
 	}
 	label {
 		display: inline-block;
-		width: 50px;
+		width: 70px;
 		margin-right: 30px;
 		text-align: right;
 	}
@@ -33,7 +35,8 @@
 	<h1 style="color: #800000; font-family: Arial; text-align: center;">re/Place</h1>
 </head>
 
-<body>	
+<body bgcolor="#7ec0ee">
+	<p class="sansserif">Submit a shape below, and watch it appear on screen as you collaborate with others!</p>	
         <canvas id="mainCanvas" width="500" height="500" style="border:3px solid #000000;"></canvas>
 	
 	<?php
@@ -56,7 +59,7 @@
                     die('Could not enter data: ' . mysql_error());
             }
             echo "<script> ";
-            echo "var canvas = document.getElementById('mainCanvas'); var context = canvas.getContext('2d'); ";
+            echo "var canvas = document.getElementById('mainCanvas'); var context = canvas.getContext('2d'); context.fillStyle = \"white\"; context.fillRect(0,0,canvas.width,canvas.height); context.fillStyle = \"black\"; context.strokeStyle = \"black\";";
 
             while($row = mysqli_fetch_assoc($retval)) {
 
@@ -91,9 +94,8 @@
             mysqli_close($conn);
         ?>
 
-	<p class="sansserif">please work</p>
-        <iframe style="display:none" name="hidden-form"></iframe>
-	<form action="/draw.php" method="post" onsubmit="setTimeout(function () { window.location.reload(); }, 20)">
+        <iframe style="display:none" name="hidden-form"></iframe><br>
+	<form action="/draw.php" method="post" target="hidden-form" onsubmit="setTimeout(function(){window.location.reload();},100)">
                 <div>
                         <label for="xCoord">X:</label>
                         <input style="width:60px;" name="xCoord" type="number" min="0" max="500" required>
@@ -104,11 +106,11 @@
                         <label for="size">Size:</label>
                         <input style="width:60px;" name="size" type="number" min="1" max="100" required>
 			<input style="margin-left:10px;" name="type" type="radio" value="2" required>Triangle<br><br>
-			<input style="margin-left:80px;" type="checkbox" name="fill" value="1">Fill shape<br><br>
+			<input style="margin-left:105px;" type="checkbox" name="fill" value="1">Fill shape<br><br>
                         <span class="validity"></span>
                 </div>
                 <div>
-                        <input style="margin-left:30px;" type="submit">
+                        <input style="margin-left:105px;" type="submit">
                 </div>
 	</form>
 

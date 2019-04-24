@@ -12,11 +12,11 @@ Daniel Raftery (draftery@purdue.edu)
 
 Description
 ------------
-An entertaining social experiment where users collaborate on a virtual canvas, using basic shapes and colors. After placing a shape on the canvas, the user will have to wait a predetermined amount of time before interacting with the canvas again. Once a week, the state of the canvas will be saved for future viewing, and the canvas will be reset.
+An entertaining social experiment where users collaborate on a virtual canvas without having to log in, using basic shapes and colors. After placing a shape on the canvas, the user will have to wait a predetermined amount of time before interacting with the canvas again. Once a week, the state of the canvas will be saved for future viewing, and the canvas will be reset.
 
 How to Use
 ------------
-Simply enter the desired size and coordinates, choose your desired shape, and hit "Submit"! Your shape will now be added to the canvas! Choose your entry wisely, because once you enter your shape, you will be blocked for a short amount of time from submitting new ones.
+Simply enter the desired size and coordinates, choose your desired shape, and hit "Submit"! Your shape will now be added to the canvas. At the bottom of the page, you can also view which users/IPs submitted the most recent shapes.
 
 Technologies/Services
 ----------------------

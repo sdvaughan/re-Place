@@ -2,10 +2,11 @@
 	<style>
 		table, th, td {
 			border: 1px solid black;
-			border-collapse: collapse;	
+			border-collapse: collapse;
+			background-color: #ffffff;	
 		}
 	</style>
-<body>
+<body bgcolor="7ec0ee">
 
 
 	<?php

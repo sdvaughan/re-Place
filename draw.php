@@ -22,9 +22,12 @@
             $time = date('Y-m-d H:i:s');
             $ip = $_SERVER['REMOTE_ADDR'];
 
-         #   echo $time;
+	    #   echo $time;
 
-            $sql = "INSERT INTO `shapes` VALUES ($x, $y, $size, $type, $fill, \"$time\", \"$ip\")";	#forming SQL query
+	    # $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+	    $sql = "INSERT INTO `shapes` VALUES ($x, $y, $size, $type, $fill, \"$time\", \"$ip\")";	#forming SQL query
+	    # fwrite($myfile,$sql);
+	    # fclose($myfile);
           #  echo $sql;
           #  echo "Before db select";
           #  echo "after db select";
