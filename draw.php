@@ -1,7 +1,7 @@
 <html>
         <body>
         <?php
-                echo "IS THIS WORKING\n";
+     #           echo "IS THIS WORKING\n";
             $dbhost = 'localhost';			#credentials
             $dbuser = 'shapesDBUser';
             $dbpass = 'passForDB00!';
@@ -23,7 +23,10 @@
             $ip = $_SERVER['REMOTE_ADDR'];
 
 	    #   echo $time;
-
+	    $valid = (isset($_POST['xCoord'])) ? 1 : 0;
+	    if (! $valid ) {
+	    	    header("Location: index.php");
+	    }
 	    # $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
 	    $sql = "INSERT INTO `shapes` VALUES ($x, $y, $size, $type, $fill, \"$time\", \"$ip\")";	#forming SQL query
 	    # fwrite($myfile,$sql);

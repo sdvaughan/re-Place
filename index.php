@@ -17,11 +17,16 @@
 		font-weight: bold;
 		text-align: center;
 	}
+	input {
+		font-family: "Agency FB", sans-serif; font-weight: bold;
+	}
 	label {
 		display: inline-block;
 		width: 70px;
 		margin-right: 30px;
 		text-align: right;
+		font-family: "Agency FB", sans-serif;
+		font-weight: bold;
 	}
 	canvas {
 		padding-left: 0;
@@ -99,14 +104,14 @@
                 <div>
                         <label for="xCoord">X:</label>
                         <input style="width:60px;" name="xCoord" type="number" min="0" max="500" required>
-                        <input style="margin-left:10px;" name="type" type="radio"  value="0" required>Circle<br>
+			<input style="margin-left:10px; font-family: 'Agency FB', sans-serif; font-weight: bold;" name="type" type="radio"  value="0" required>Circle<br>
                         <label for="yCoord">Y:</label>
                         <input style="width:60px;" name="yCoord" type="number" min="0" max="500" required>
-                        <input style="margin-left:10px;" name="type" type="radio" value="1" required>Square<br>
+                        <input style="margin-left:10px; font-family: 'Agency FB', sans-serif; font-weight: bold;" name="type" type="radio" value="1" required>Square<br>
                         <label for="size">Size:</label>
                         <input style="width:60px;" name="size" type="number" min="1" max="100" required>
-			<input style="margin-left:10px;" name="type" type="radio" value="2" required>Triangle<br><br>
-			<input style="margin-left:105px;" type="checkbox" name="fill" value="1">Fill shape<br><br>
+			<input style="margin-left:10px; font-family: 'Agency FB', sans-serif; font-weight: bold;" name="type" type="radio" value="2" required>Triangle<br><br>
+			<input style="margin-left:105px; font-family: 'Agency FB', sans-serif; font-weight: bold;" type="checkbox" name="fill" value="1">Fill shape<br><br>
                         <span class="validity"></span>
                 </div>
                 <div>
@@ -133,7 +138,7 @@
                     echo "Error return\n";
                     die('Could not enter data: ' . mysql_error());
             }
-            echo "<br><h2 style=\"text-align: center\">Entry List:</h2><table style=\"width:75%; margin-left: auto; margin-right: auto;\"";
+            echo "<br><h2 style=\"text-align: center; font-family: Agency FB, sans-serif; font-weight: bold;\">Entry List:</h2><table style=\"width:75%; margin-left: auto; margin-right: auto;\"";
             echo "<tr><th>X Position</th><th>Y Position</th><th>Size</th><th>Shape</th><th>Filled</th><th>Artist (IP)</th><th>Time</th></tr>";
 
             while($row = mysqli_fetch_assoc($retval)) {
